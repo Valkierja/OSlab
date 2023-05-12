@@ -1,0 +1,23 @@
+# how much memory the emulated machine will have
+megs: 32
+
+# filename of ROM images
+romimage: file=/usr/local/share/bochs/BIOS-bochs-latest
+vgaromimage: file=/usr/local/share/bochs/VGABIOS-lgpl-latest
+
+# what disk images will be used
+#floppya: 1_44=a.img, status=inserted
+
+# choose the boot disk.
+boot: disk
+
+# where do we send log messages?
+log: bochs.log
+
+# disable the mouse
+mouse: enabled=0
+
+# enable key mapping, using US layout as default.
+keyboard:  keymap=/usr/local/share/bochs/keymaps/x11-pc-us.map
+
+ata0: enabled=1, ioaddr1=0x1f0, ioaddr2=0x3f0, irq=14
